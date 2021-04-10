@@ -15,7 +15,7 @@ logs="/root/log_up.txt"
 logs2="/root/log_stages.txt"
 
 
-(($UID > 0)) && { echo "Entre como ROOT e prossiga!!" ; exit 1 ;}
+#(($UID > 0)) && { echo "Entre como ROOT e prossiga!!" ; exit 1 ;}
 [[ $# -eq 0 ]] && { echo -e "${verm}Use --help para ver ajuda.$fim" ; exit 1 ;}
 
 case $1 in
